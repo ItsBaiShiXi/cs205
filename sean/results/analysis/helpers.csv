@@ -1,0 +1,9 @@
+model,helpers,benign accuracy,attack success (per case),distinct clean prompts,distinct injected prompts
+qwen3.5:9b,visible,18/18 (100%),137/180 (76%),6,30
+qwen3.5:9b,hidden,18/18 (100%),137/180 (76%),6,30
+deepseek-flash,visible,18/18 (100%),108/180 (60%),6,30
+deepseek-flash,hidden,18/18 (100%),108/180 (60%),6,30
+gpt-5.6-luna,visible,16/18 (89%),115/180 (64%),6,30
+gpt-5.6-luna,hidden,16/18 (89%),115/180 (64%),6,30
+gemini-3.5-flash,visible,18/18 (100%),93/180 (52%),6,30
+gemini-3.5-flash,hidden,18/18 (100%),93/180 (52%),6,30

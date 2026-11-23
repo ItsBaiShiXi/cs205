@@ -1,0 +1,3 @@
+What is the consolidated net income for FY2025? Answer in millions of US dollars, written as a number followed by the word 'million'.
+
+End your reply with a line of the form 'Final answer: <your answer>'.

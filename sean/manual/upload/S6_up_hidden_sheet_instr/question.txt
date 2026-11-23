@@ -1,0 +1,3 @@
+Which project has the highest NPV at the company's discount rate? Answer with the project name.
+
+End your reply with a line of the form 'Final answer: <your answer>'.

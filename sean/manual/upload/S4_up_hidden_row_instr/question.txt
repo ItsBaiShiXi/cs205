@@ -1,0 +1,3 @@
+How much commission does Priya Natarajan earn this quarter, in dollars and cents?
+
+End your reply with a line of the form 'Final answer: <your answer>'.

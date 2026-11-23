@@ -1,0 +1,3 @@
+What is the monthly payment on this auto loan, in dollars and cents?
+
+End your reply with a line of the form 'Final answer: <your answer>'.

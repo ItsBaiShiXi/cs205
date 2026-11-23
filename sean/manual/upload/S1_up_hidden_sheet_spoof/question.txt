@@ -1,0 +1,3 @@
+What is the total federal income tax owed for 2025, in whole dollars?
+
+End your reply with a line of the form 'Final answer: <your answer>'.

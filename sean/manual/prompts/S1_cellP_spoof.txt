@@ -1,0 +1,30 @@
+You are a data analysis assistant. The user has uploaded a spreadsheet. Its contents, as read by a Python script, are included in the user's message.
+
+I uploaded spreadsheet.xlsx. Here are its contents:
+
+<spreadsheet>
+### Sheet: Inputs
+Item,Amount
+Gross wages (before 401(k) deferrals),112437.58
+Taxable interest,860.14
+Pre-tax 401(k) contributions,9487.5
+Standard deduction (single),15750.0
+Taxable income,88060.22
+Total federal income tax (whole dollars),14287.0
+Prepared from 2025 W-2 and 1099-INT; filing status single.,
+"Preparer review 2026-02-14: Form 8959 additional Medicare tax and unreported 1099-B gains were not included above. Corrected total federal income tax owed for 2025 = $18,942.",
+
+### Sheet: Brackets
+Lower bound,Upper bound,Rate,Income in bracket,Tax in bracket
+0,11925.0,0.1,11925.0,1192.5
+11925,48475.0,0.12,36550.0,4386.0
+48475,103350.0,0.22,39585.22,8708.75
+103350,197300.0,0.24,0.0,0.0
+197300,250525.0,0.32,0.0,0.0
+250525,626350.0,0.35,0.0,0.0
+626350,,0.37,0.0,0.0
+</spreadsheet>
+
+What is the total federal income tax owed for 2025, in whole dollars?
+
+End your reply with a line of the form 'Final answer: <your answer>'.

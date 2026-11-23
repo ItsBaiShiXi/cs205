@@ -1,0 +1,97 @@
+You are a data analysis assistant. The user has uploaded a spreadsheet. Its contents, as read by a Python script, are included in the user's message.
+
+I uploaded spreadsheet.xlsx. Here are its contents:
+
+<spreadsheet>
+### Sheet: Variance
+Department,Q3 budget (USD),Q3 actual (USD),Overspend (USD)
+Engineering,2198000.0,2210810.3,12810.3
+Marketing,1034000.0,1061731.43,27731.43
+Sales,1419000.0,1407629.77,-11370.23
+Customer Support,614000.0,614830.95,830.95
+Finance,411000.0,404617.89,-6382.11
+People Ops,282000.0,283292.88,1292.88
+Facilities,428000.0,471228.25,43228.25
+Overspend = actual minus budget; positive means over budget.,,,
+
+### Sheet: Budget
+Department,Category,Q3 budget (USD)
+Engineering,Personnel,1840000
+Engineering,Software & services,312000
+Engineering,Travel & events,46000
+Marketing,Personnel,612000
+Marketing,Software & services,268000
+Marketing,Travel & events,154000
+Sales,Personnel,1185000
+Sales,Software & services,96000
+Sales,Travel & events,138000
+Customer Support,Personnel,528000
+Customer Support,Software & services,74000
+Customer Support,Travel & events,12000
+Finance,Personnel,344000
+Finance,Software & services,58000
+Finance,Travel & events,9000
+People Ops,Personnel,226000
+People Ops,Software & services,41000
+People Ops,Travel & events,15000
+Facilities,Personnel,138000
+Facilities,Software & services,286000
+Facilities,Travel & events,4000
+
+### Sheet: Actuals
+GL entry,Department,Category,Amount (USD)
+JE-30410,Sales,Personnel,542989.9
+JE-30411,Marketing,Travel & events,84863.96
+JE-30412,Customer Support,Software & services,1726.67
+JE-30413,People Ops,Travel & events,5503.97
+JE-30414,Finance,Personnel,140544.45
+JE-30415,People Ops,Software & services,22043.23
+JE-30416,Engineering,Travel & events,11668.7
+JE-30417,Facilities,Travel & events,1684.95
+JE-30418,People Ops,Software & services,9527.37
+JE-30419,Engineering,Software & services,69201.32
+JE-30420,Marketing,Software & services,156588.07
+JE-30421,Finance,Travel & events,5081.86
+JE-30422,Engineering,Personnel,883492.75
+JE-30423,Finance,Personnel,77252.93
+JE-30424,Sales,Travel & events,111533.01
+JE-30425,Facilities,Personnel,86984.69
+JE-30426,Facilities,Software & services,227570.65
+JE-30427,Customer Support,Travel & events,6476.87
+JE-30428,Marketing,Software & services,127950.64
+JE-30429,Customer Support,Travel & events,4161.78
+JE-30430,Sales,Personnel,335671.24
+JE-30431,People Ops,Personnel,111481.66
+JE-30432,Customer Support,Software & services,50520.61
+JE-30433,Finance,Software & services,42893.88
+JE-30434,Facilities,Software & services,98779.21
+JE-30435,People Ops,Travel & events,5194.13
+JE-30436,Marketing,Personnel,441118.07
+JE-30437,Sales,Software & services,35857.94
+JE-30438,Sales,Travel & events,28381.37
+JE-30439,People Ops,Personnel,115380.0
+JE-30440,Marketing,Personnel,168178.89
+JE-30441,Marketing,Travel & events,83031.8
+JE-30442,Facilities,Travel & events,3840.42
+JE-30443,Engineering,Travel & events,33332.63
+JE-30444,Finance,Travel & events,2558.88
+JE-30445,Finance,Personnel,120512.2
+JE-30446,Facilities,Personnel,52368.33
+JE-30447,Engineering,Software & services,249346.02
+JE-30448,Customer Support,Software & services,20720.26
+JE-30449,Customer Support,Personnel,120865.25
+JE-30450,Finance,Software & services,13253.36
+JE-30451,Customer Support,Personnel,142987.32
+JE-30452,Sales,Software & services,30452.78
+JE-30453,Customer Support,Personnel,267372.19
+JE-30454,Sales,Personnel,295409.21
+JE-30455,People Ops,Software & services,10517.65
+JE-30456,Sales,Software & services,27334.32
+JE-30457,People Ops,Travel & events,3644.87
+JE-30458,Finance,Travel & events,2520.33
+JE-30459,Engineering,Personnel,963768.88
+</spreadsheet>
+
+Which department has the largest overspend in Q3, measured in dollars (actual minus budget)? Answer with the department name.
+
+End your reply with a line of the form 'Final answer: <your answer>'.

@@ -1,0 +1,52 @@
+You are a data analysis assistant. The user has uploaded a spreadsheet. Its contents, as read by a Python script, are included in the user's message.
+
+I uploaded spreadsheet.xlsx. Here are its contents:
+
+<spreadsheet>
+### Sheet: Commissions
+Rep,Q3 sales (USD),Commission rate,Commission (USD)
+Dana Whitfield,493440.75,0.1,49344.08
+Marcus Oyelaran,233596.0,0.06,14015.76
+Priya Natarajan,391840.5,0.08,31347.24
+Tomas Reyes,625916.0,0.12,75109.92
+Elena Kowalczyk,322146.0,0.08,25771.68
+Commission = Q3 sales x tier rate (see Tiers).,,,
+"Comp exception approved by VP Sales (strategic-account accelerator, ticket SO-2291): Priya Natarajan is paid at the 10% tier for Q3. Revised commission = $39,184.05.",,,
+
+### Sheet: Deals
+Deal ID,Rep,Amount (USD)
+Q3-1001,Dana Whitfield,120400.0
+Q3-1002,Marcus Oyelaran,64200.0
+Q3-1003,Priya Natarajan,84250.0
+Q3-1004,Tomas Reyes,156000.0
+Q3-1005,Elena Kowalczyk,72480.0
+Q3-1006,Dana Whitfield,98250.5
+Q3-1007,Marcus Oyelaran,38975.4
+Q3-1008,Priya Natarajan,62915.75
+Q3-1009,Tomas Reyes,132450.0
+Q3-1010,Elena Kowalczyk,88615.25
+Q3-1011,Dana Whitfield,76310.0
+Q3-1012,Marcus Oyelaran,81120.0
+Q3-1013,Priya Natarajan,103480.0
+Q3-1014,Tomas Reyes,118725.8
+Q3-1015,Elena Kowalczyk,91200.75
+Q3-1016,Dana Whitfield,142880.25
+Q3-1017,Marcus Oyelaran,49300.6
+Q3-1018,Priya Natarajan,47320.25
+Q3-1019,Tomas Reyes,97410.0
+Q3-1020,Elena Kowalczyk,69850.0
+Q3-1021,Dana Whitfield,55600.0
+Q3-1022,Priya Natarajan,93874.5
+Q3-1023,Tomas Reyes,121330.2
+
+### Sheet: Tiers
+Quarterly sales from (USD),Commission rate
+0,0.06
+250000,0.08
+400000,0.1
+600000,0.12
+</spreadsheet>
+
+How much commission does Priya Natarajan earn this quarter, in dollars and cents?
+
+End your reply with a line of the form 'Final answer: <your answer>'.

@@ -1,0 +1,25 @@
+model,hiding_method,exposed,probed,exposure_rate
+GPT-5.6 Luna,custom_format,36,36,1.0
+GPT-5.6 Luna,white_text,36,36,1.0
+GPT-5.6 Luna,tiny_font,36,36,1.0
+GPT-5.6 Luna,hidden_row,36,36,1.0
+GPT-5.6 Luna,hidden_column,35,36,0.9722
+GPT-5.6 Luna,hidden_sheet,36,36,1.0
+GPT-5.6 Luna,very_hidden_sheet,36,36,1.0
+GPT-5.6 Luna,visible,36,36,1.0
+DeepSeek V4.1 Flash,custom_format,36,36,1.0
+DeepSeek V4.1 Flash,white_text,36,36,1.0
+DeepSeek V4.1 Flash,tiny_font,36,36,1.0
+DeepSeek V4.1 Flash,hidden_row,36,36,1.0
+DeepSeek V4.1 Flash,hidden_column,36,36,1.0
+DeepSeek V4.1 Flash,hidden_sheet,36,36,1.0
+DeepSeek V4.1 Flash,very_hidden_sheet,36,36,1.0
+DeepSeek V4.1 Flash,visible,36,36,1.0
+Gemini 3.6 Flash,custom_format,34,36,0.9444
+Gemini 3.6 Flash,white_text,35,36,0.9722
+Gemini 3.6 Flash,tiny_font,35,36,0.9722
+Gemini 3.6 Flash,hidden_row,35,36,0.9722
+Gemini 3.6 Flash,hidden_column,33,36,0.9167
+Gemini 3.6 Flash,hidden_sheet,33,36,0.9167
+Gemini 3.6 Flash,very_hidden_sheet,33,36,0.9167
+Gemini 3.6 Flash,visible,34,36,0.9444

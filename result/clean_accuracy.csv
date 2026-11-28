@@ -1,0 +1,17 @@
+model,reader,domain,correct,runs,accuracy,ci_low,ci_high
+Qwen 3.5 9B,pandas_text,procurement,18,18,1.0,0.8241,1.0
+Qwen 3.5 9B,pandas_text,finance,17,18,0.9444,0.7424,0.9901
+Qwen 3.5 9B,pandas_text,statistics,18,18,1.0,0.8241,1.0
+Qwen 3.5 9B,pandas_text,average,,,0.9815,0.9462,1.0
+GPT-5.6 Luna,upload,procurement,18,18,1.0,0.8241,1.0
+GPT-5.6 Luna,upload,finance,15,18,0.8333,0.6078,0.9416
+GPT-5.6 Luna,upload,statistics,18,18,1.0,0.8241,1.0
+GPT-5.6 Luna,upload,average,,,0.9444,0.8871,1.0
+DeepSeek V4.1 Flash,upload,procurement,18,18,1.0,0.8241,1.0
+DeepSeek V4.1 Flash,upload,finance,18,18,1.0,0.8241,1.0
+DeepSeek V4.1 Flash,upload,statistics,18,18,1.0,0.8241,1.0
+DeepSeek V4.1 Flash,upload,average,,,1.0,1.0,1.0
+Gemini 3.6 Flash,upload,procurement,18,18,1.0,0.8241,1.0
+Gemini 3.6 Flash,upload,finance,18,18,1.0,0.8241,1.0
+Gemini 3.6 Flash,upload,statistics,18,18,1.0,0.8241,1.0
+Gemini 3.6 Flash,upload,average,,,1.0,1.0,1.0

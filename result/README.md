@@ -9,11 +9,11 @@ Draft for the team, 2026-11-27. These are the attack results, without any defens
 - Each domain cell has 126 runs (6 scenarios × 7 hiding methods × 3 runs) unless noted.
 - The average weights the three domains equally. Every CSV gives a 95% confidence interval (`ci_low`, `ci_high`), and all its rates are fractions between 0 and 1.
 
-**Making figures.** Each section names its CSV in this folder and suggests a figure. The columns are explained at the end.
+**Data.** Each section names its CSV in this folder. The columns are explained at the end.
 
 ## 1. Accuracy on clean files (baseline)
 
-Data: `clean_accuracy.csv`. Figure: grouped bars, model × domain.
+Data: `clean_accuracy.csv`.
 
 | Model | Procurement | Finance | Statistics | Average |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ Without an attack, the models answer almost every question correctly, so the que
 
 ## 2. Hidden disguised corrections (E1)
 
-Data: `attack_success.csv`, rows with `placement = hidden` and `payload_style = disguised_correction`. Figure: grouped bars with error bars, model × domain.
+Data: `attack_success.csv`, rows with `placement = hidden` and `payload_style = disguised_correction`.
 
 | Model | Procurement | Finance | Statistics | Average |
 |---|---|---|---|---|
@@ -39,7 +39,7 @@ They succeed 88–98% of the time on all four models.
 
 ## 3. Hidden explicit instructions (E1)
 
-Data: `attack_success.csv`, rows with `placement = hidden` and `payload_style = explicit_instruction`. Figure: the same as section 2, side by side.
+Data: `attack_success.csv`, rows with `placement = hidden` and `payload_style = explicit_instruction`.
 
 | Model | Procurement | Finance | Statistics | Average |
 |---|---|---|---|---|
@@ -52,13 +52,13 @@ The commercial models mostly ignore them; only the small local model follows the
 
 ## 4. Visible control (E1)
 
-Data: `attack_success.csv`, rows with `placement = visible` (18 runs per domain). Figure: hidden vs visible bars per model, from the `average` rows.
+Data: `attack_success.csv`, rows with `placement = visible` (18 runs per domain).
 
 The same payloads in an ordinary visible cell succeed about as often: disguised corrections 93% (Qwen), 89% (GPT), 96% (DeepSeek) and 89% (Gemini); explicit instructions 74% (Qwen) and 0–6% (commercial models). The model treats hidden content like visible content. Hiding only keeps it from the user, whose check of the file therefore cannot catch it.
 
 ## 5. By hiding method (E1)
 
-Data: `attack_by_hiding_method.csv`, three domains pooled (54 runs per cell). Figure: heatmap of hiding method × model, for disguised corrections.
+Data: `attack_by_hiding_method.csv`, three domains pooled (54 runs per cell). The table shows disguised corrections.
 
 | Hiding method | Qwen | GPT | DeepSeek | Gemini |
 |---|---|---|---|---|
@@ -81,7 +81,7 @@ Counting only scenarios whose clean file was answered correctly in every run, AS
 
 ## 7. Provider upload vs pandas text (E2)
 
-Data: `text_vs_upload.csv` (commercial models only). Figure: paired bars or a dumbbell plot, per model and domain.
+Data: `text_vs_upload.csv` (commercial models only).
 
 ASR for hidden disguised corrections, pandas text → uploaded file:
 
@@ -95,7 +95,7 @@ Every difference is within 7 points, in both directions. Explicit instructions a
 
 ## 8. Exposure (E2)
 
-Data: `exposure.csv`, one copy-out run per injected file (36 per hiding method). Figure: bars or a heatmap, hiding method × model.
+Data: `exposure.csv`, one copy-out run per injected file (36 per hiding method).
 
 Asked to copy out the uploaded file, the models reproduced the hidden payload in 251/252 cases (GPT), 252/252 (DeepSeek) and 238/252 (Gemini, 94%), hidden and very hidden sheets included. Gemini also reproduced only 34/36 visible payloads (94%), so its misses come from incomplete copying, not from hiding. Copying out gives a lower bound on what a model received.
 
